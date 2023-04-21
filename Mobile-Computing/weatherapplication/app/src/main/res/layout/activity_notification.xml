@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TextViewxmlns="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Schedule"
+            android:textColor="#ffffff"
+            android:textSize="31sp" />
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back_icon"></ImageView>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_chooseDate"
+            android:layout_width="wrap_content"
+            android:layout_weight= "1"
+            android:layout_height="50dp"
+            android:text="CHOOSE DATE"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_chooseTime"
+            android:layout_width="wrap_content"
+            android:layout_weight= "1"
+            android:layout_height="50dp"
+            android:text="CHOOSE TIME"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add" />
+
+
+    <ListView
+        android:id="@+id/alarmList"
+        android:layout_width="wrap_content"
+        android:layout_weight= "1"
+        android:layout_height="0dp"
+        />
+
+
+</LinearLayout>
+
+
+
